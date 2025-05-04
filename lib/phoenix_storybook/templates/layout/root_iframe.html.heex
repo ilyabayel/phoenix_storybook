@@ -34,11 +34,6 @@
       />
     <% end %>
 
-    <link
-      rel="stylesheet"
-      nonce={csp_nonce(@conn, :style)}
-      href={asset_path(@conn, "css/app.css")}
-    />
     <%= if path = storybook_css_path(@conn) do %>
       <link
         nonce={csp_nonce(@conn, :style)}
